@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cadastro.css">
+
+    <title></title>
+</head>
+<body>
+  <div class="container">
+    <h2>Criar conta</h2>
+    <div class="personal-data">
+      <h3>Dados pessoais</h3>
+      <p>Insira seus dados exatamente como aparecem em seu CPF e RG. Eles serão usados quando você comprar suas passagens.</p>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="pais">País de emissão do documento</label>
+          <select id="pais" name="pais">
+            <option value="br">Brasil</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="cpf">Número de CPF *</label>
+          <input type="text" id="cpf" name="cpf" placeholder="Insira o número de CPF" required>
+        </div>
+        <div class="form-group">
+          <label for="nome">Nome(s) *</label>
+          <input type="text" id="nome" name="nome" placeholder="Insira o nome ou nomes" required>
+        </div>
+        <div class="form-group">
+          <label for="sobrenome">Sobrenome(s) *</label>
+          <input type="text" id="sobrenome" name="sobrenome" placeholder="Insira apenas sobrenome(s)" required>
+        </div>
+        <div class="form-group">
+          <label for="data_nascimento">Data de nascimento (dd/mm/aaaa) *</label>
+          <input type="text" id="data_nascimento" name="data_nascimento" placeholder="Insira sua data de nascimento" required>
+        </div>
+        <div class="form-group">
+    
+            <legend>Sexo *</legend>
+            <select name="cabecalho-22" id="cabecalho-22">
+              <option value="brl">BRL - R$</option>
+              <option value="usd">USD - US$</option>
+              <option value="eur">EUR - &#8364</option>
+          </select>
+            
+      
+        </div>
+    </div>
+    <div class="login-data">
+      <h3>Dados de login para sua conta</h3>
+      <p>Dê preferência ao seu email pessoal para garantir que vai receber nossas comunicações.</p>
+      <div class="form-group">
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+      </div>
+      <div class="form-group">
+        <label for="senha">Senha *</label>
+        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+        <input type="checkbox" id="mostrar_senha">
+        <label for="mostrar_senha">Visualizar senha</label>
+      </div>
+    </div>
+    <p>Sua senha deve ter no mínimo:</p>
+    <ul>
+      <li>1 maiúscula</li>
+      <li>1 minúscula</li>
+      <li>1 número</li>
+      <li>8 caracteres</li>
+    </ul>
+    <div class="form-group">
+      <input type="checkbox" id="termos_condicoes" required>
+      <label for="termos_condicoes">Eu aceito os <a href="constru.html">Termos e condições</a> e <a href="constru.html">Termos e condições da conta </a>.</label>
+  
+    <div class="form-group">
+      <input type="checkbox" id="politica_privacidade" required>
+      <label for="politica_privacidade">Ao criar a conta estou ciente que meus dados serão tratados de acordo com as <a href="constru.html">Políticas de Privacidade do Nordeste Airlanes</a> <a href="constru.html" target="_blank"></a>.</label>
+    </div>
+    <a href="constru.html"><button type="submit">Criar conta</button></a> 
+    </form>
+  </div>
+  
+
+</body>
+</html>
